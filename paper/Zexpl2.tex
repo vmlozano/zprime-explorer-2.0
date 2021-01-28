@@ -1,0 +1,139 @@
+\documentclass[11pt,a4paper]{article}
+
+\pdfoutput=1
+\usepackage{jheppub}
+%\usepackage[margin=2cm]{geometry}
+
+\usepackage{amsmath,bbm}
+\usepackage{amssymb,ulem}
+\usepackage{graphicx} 
+\graphicspath{{figures/}}
+\usepackage[latin1]{inputenc}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
+%\usepackage[footnotesize]{caption}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+%% the two lines below include line numbers. Remove them in the final version
+%\usepackage{lineno}
+%\linenumbers
+
+%\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry}
+%\usepackage{paralist}
+%\usepackage{abstract}
+\usepackage{upgreek}
+
+
+\setlength{\marginparwidth}{2.5cm}
+%\usepackage[colorinlistoftodos,textsize=small]{todonotes} % colored to-dos!
+
+
+    \makeatletter
+    \let\@fnsymbol\@arabic
+    \makeatother
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+
+\newcommand\VL[1]{{\color{blue}{\bf [VL: {#1}]}}}
+\newcommand\RS[1]{{\color{purple}{\bf [RS: {#1}]}}}
+\newcommand\JZ[1]{{\color{orange}{\bf [JZ: {#1}]}}}
+
+%\def\gsim{\mathrel{\rlap{\lower4pt\hbox{\hskip1pt$\sim$}}
+  %  \raise1pt\hbox{$>$}}}
+
+\def\gsim{\raise0.3ex\hbox{$\;>$\kern-0.75em\raise-1.1ex\hbox{$\sim\;$}}}
+\def\lsim{\raise0.3ex\hbox{$\;<$\kern-0.75em\raise-1.1ex\hbox{$\sim\;$}}}
+
+\title{
+	Z' explorer 2.0	}
+	
+\preprint{\begin{flushright}  DESY 21-abc \\ IFIC 2021-abc \\ 
+\end{flushright}}	
+	
+\author[a]{V\'ictor Mart\'in Lozano,}
+\author[b]{Rosa Mar\'ia Sand\'a Seoane,}
+\author[c]{Jose Zurita}
+\affiliation[a]{\it DESY, Notkestra{\ss}e  85,  22607  Hamburg, Germany}
+\affiliation[b]{\it  International Center for Advanced Studies (ICAS)\\
+ UNSAM, Campus Miguelete, 25 de Mayo y Francia, (1650) Buenos Aires, Argentina } 
+\affiliation[c]{\it Instituto de F\'{\i}sica Corpuscular, CSIC-Universitat de Val\`encia,
+ E-46980 Paterna, Valencia, Spain}
+\emailAdd{victor.lozano@desy.de}
+\emailAdd{rsanda@unsam.edu.ar}
+\emailAdd{jzurita@ific.uv.es}
+
+\date{\today}
+
+\abstract{
+Write abstract
+}
+
+\notoc % supresses the table of contents
+\begin{document}
+
+%\begin{flushright} 
+%APCTP-Pre2020-XXX \\ TTP20-030 \\  LTH 1242
+%\end{flushright}
+
+\maketitle
+
+%-----------------------------------------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+\input{01_intro.tex}
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\section{Z' models: theoretical framework}
+\label{sec:model}
+\input{02_model.tex}
+%-----------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\section{ATLAS search for Z' mediators to the dark sector}
+\label{sec:setup}
+\input{03_atlas.tex}
+%-----------------------------------------------------------------------------
+
+%%-----------------------------------------------------------------------------
+\section{Numerical results}
+\label{sec:resu}
+\input{04_resu.tex}
+%%-----------------------------------------------------------------------------
+%
+%-----------------------------------------------------------------------------
+\section{Conclusions}
+\label{sec:conclu}
+\input{05_conclu.tex}
+%-----------------------------------------------------------------------------
+
+\begin{appendix}
+% %-----------------------------------------------------------------------------
+ \section{Derivation of exclusion significance in the presence of unknown backgrounds}
+ \label{app:statistics}
+ \input{06_app_statistics.tex}
+ %-----------------------------------------------------------------------------
+ \section{Z' explorer 2.0: implementation details}
+ \label{app:statistics}
+ \input{07_app_code.tex}
+ %-----------------------------------------------------------------------------
+
+\end{appendix}
+
+
+\section*{Acknowledgements:} 
+
+We would like to thank Ezequiel Alvarez for useful comments on the manuscript.  JZ is supported by the {\it Generalitat Valenciana} (Spain) through the {\it plan GenT} program (CIDEGENT/2019/068).
+
+
+\bibliographystyle{JHEP}
+\bibliography{Zexpl2}
+
+\end{document}

@@ -1,0 +1,8 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Bernreuther:2018nat}
+E.~Bernreuther, J.~Horak, T.~Plehn, and A.~Butter, {\it {Actual Physics behind
+  Mono-X}},  {\em SciPost Phys.} {\bf 5} (2018), no.~4 034,
+  [\href{http://arxiv.org/abs/1805.11637}{{\tt arXiv:1805.11637}}].
+
+\end{thebibliography}\endgroup
