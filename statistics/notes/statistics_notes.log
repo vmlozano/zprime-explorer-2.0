@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.12.10)  25 JAN 2021 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.12.10)  11 FEB 2021 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1377,20 +1377,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-[2] [3] [4] [5] [6] [7] [8] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 479.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 479.
+[2] [3] [4] [5] [6] [7] [8] [9] [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 508.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 508.
  (./statistics_notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 479.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 479.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 508.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 508.
 Package rerunfilecheck Info: File `statistics_notes.out' has not changed.
 (rerunfilecheck)             Checksum: A0F08DDA965DE34DCBF7CA3F02F98A09;305.
  ) 
 Here is how much of TeX's memory you used:
- 33282 strings out of 494880
- 795207 string characters out of 6179600
- 1009965 words of memory out of 5000000
- 35929 multiletter control sequences out of 15000+600000
+ 33289 strings out of 494880
+ 795293 string characters out of 6179600
+ 1009036 words of memory out of 5000000
+ 35930 multiletter control sequences out of 15000+600000
  16349 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  74i,22n,128p,839b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1410,10 +1410,10 @@ m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on statistics_notes.pdf (9 pages, 209305 bytes).
+Output written on statistics_notes.pdf (10 pages, 214346 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

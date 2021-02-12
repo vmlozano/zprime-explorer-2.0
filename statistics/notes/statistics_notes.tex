@@ -389,6 +389,7 @@ So the median obtained for the exclusion sensitivity with uncertainties is
 \boxed{{\rm med}[Z_0|1]=\left[
 2\left((s+b)\ln\left[\frac{(s+b)(\sigma_b^2+b)}{b^2+\sigma_b^2(s+b)}\right]-\frac{b^2}{\sigma_b^2}\ln\left[1+\frac{\sigma_b^2s}{b(b+\sigma_b^2)}\right]\right)
 \right]^{1/2}.}
+\label{eq:medz0wunc}
 \end{align}
 
 In the limit where $\sigma_b^2/b\ll 1$ we take the first line of Eq.~\eqref{eq:meddes} for simplicity,
@@ -414,6 +415,34 @@ where we have used the expansion of the logarithm when $x\ll 1$ is $\ln(1+x)\app
 \approx &\left[-2\left((s+b)\ln\left[\frac{b}{s+b}\right]+s\right)\right]^{1/2}=\left[2\left((s+b)\ln\left[\frac{s+b}{b}\right]-s\right)\right]^{1/2},
 \end{align}
 that is exactly what we obtained for discovery in the absence of uncertainties in Eq.~\eqref{eq:meddiscoverywouncer}.
+
+We can also take the limit where $s/b\ll 1$, in that case we can separate the two terms of Eq.~\eqref{eq:medz0wunc} and see how they behave in that limit. If we call $a=s/b$ then the first term is,
+\begin{align}
+{\rm 1^{st} term}=(s+b)\log\left[\frac{(s+b)(\sigma_b^2+b)}{b^2+\sigma_b^2(s+b)}\right]=(ab+b)\log\left[\frac{(ab+b)(\sigma_b^2+b)}{b^2+\sigma_b^2(ab+b)}\right]=\notag\\=b(1+a)\ln\left[\frac{(1+a)(\sigma_b^2+b)}{b+\sigma_b^2(1+a)}\right]=b(1+a)\log\left[\frac{ab + b +\sigma_b^2(1+a)}{b+\sigma_b^2(1+a)}\right]=\notag\\
+=b(1+a)\log\left[1+\frac{ab}{b+\sigma_b^2(1+a)}\right].
+\end{align}
+
+In the limit of $x\ll 1$ we have,
+\begin{align}
+\log\left[1+\frac{bx}{b+d(1+x)}\right]\approx\frac{bx}{b+d}+\frac{(-b^2-2bd)x^2}{2(b+d)^2}+\mathcal{O}(x^3).
+\end{align}
+Then in our expresion,
+\begin{align}
+b(1+a)\log\left[1+\frac{ab}{b+\sigma_b^2(1+a)}\right]\approx b(1+a)\left(\frac{b}{b+\sigma_b^2}a+\frac{(-b^2-2b\sigma_b^2)}{2(b+\sigma_b^2)^2}a^2+\mathcal{O}(a^3)\right).
+\end{align}
+
+The second term of Eq.~\eqref{eq:medz0wunc} writing $a=s/b$ can be written as,
+\begin{align}
+{\rm 2^{nd} term}=\frac{b^2}{\sigma_b^2}\log\left[1+a\frac{\sigma_b^2}{(b+\sigma_b^2)}\right]\approx \frac{b^2}{\sigma_b^2}\left(\frac{\sigma_b^2}{(b + \sigma_b^2)}a -\frac{1}{2}\frac{\sigma_b^4}{(b+\sigma_b^2)^2} a^2+\mathcal{O}(a^3)\right).
+\end{align}
+If we write the first and second term together,
+\begin{align}
+&{\rm med}[Z_0|1]\approxtext{s/b\ll 1}\left[2\left(b(1+a)\left(\frac{b}{b+\sigma_b^2}a+\frac{(-b^2-2b\sigma_b^2)}{2(b+\sigma_b^2)^2}a^2+\mathcal{O}(a^3)\right)-\right.\right.\notag \\
+&\left.\left.-\frac{b^2}{\sigma_b^2}\left(\frac{\sigma_b^2}{(b + \sigma_b^2)}a -\frac{1}{2}\frac{\sigma_b^4}{(b+\sigma_b^2)^2} a^2+\mathcal{O}(a^3)\right)\right)\right]^{1/2}=\notag\\
+=&\left[2\left(\frac{ab^2}{b+\sigma_b^2}+\frac{1}{2}\frac{(-b^2-2b\sigma_b^2)}{(b+\sigma_b^2)^2}a^2b+\frac{a^2b^2}{b+\sigma_b^2}-\frac{ab^2}{b+\sigma_b^2}+\frac{1}{2}\frac{\sigma_b^2b^2a^2}{(b+\sigma_b^2)^2}+\mathcal{O}(a^3)\right)\right]^{1/2}=\notag\\
+=&\left[2\left(\frac{a^2b^2}{b+\sigma_b^2}-\frac{a^2b^3+\sigma_b^2b^2a^2}{2(b+\sigma_b^2)^2}\right)\right]^{1/2}=\left[2\frac{a^2b^2}{b+\sigma_b^2}\left(1-\frac{b+\sigma_b^2}{2(b+\sigma_b^2)}\right)\right]^{1/2}=\notag\\=&\frac{ab}{\sqrt{b^2+\sigma_b^2}}=\frac{s}{\sqrt{b+\sigma_b^2}}.
+\end{align}
+
 \section{Exclusion limits with uncertanties.}
 
 \begin{align}
